@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { useDispatch } from "react-redux"
 import { addTodo } from "../store/todoSlice"
+import ToDoItem from "./ToDoItem"
 
 function Tdl() {
   const [value, setValue] = useState("");
@@ -21,6 +22,9 @@ function Tdl() {
                 onChange={(e) => setValue(e.target.value)}
             />
               <button onClick={handleSubmit} className="bg-indigo-500 text-white h-10 w-32 text-lg font-semibold rounded-md rounded-l-none">Submit</button>
+            </div>
+            <div className="flex flex-col w-4/5 mt-8 border-2 border-slate-600">
+                <ToDoItem/>
             </div>
         </div>
     </>

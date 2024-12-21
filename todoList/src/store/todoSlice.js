@@ -17,13 +17,16 @@ const todoSlice = createSlice({
             state.push(newTodo);
         },
         markComplete: (state, action) => {
-
+            const todo = state.find(todo => todo.id === action.payload);
+            if (todo) {
+                todo.completed = !todo.completed;
+            }
         },
         deleteTodo: (state, action) => {
-
+            return state.filter(todo => todo.id !== action.payload);
         },
     }
 })
 
-export const { addTodo } = todoSlice.actions;
+export const { addTodo, markComplete, deleteTodo } = todoSlice.actions;
 export default todoSlice.reducer;
