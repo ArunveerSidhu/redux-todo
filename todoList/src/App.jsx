@@ -1,10 +1,11 @@
 import React from "react"
+import Tdl from "./comonents/tdl"
 
 function App() {
   return (
     <>
       <div className="flex h-screen w-screen justify-center items-center">
-          <h1 className="text-6xl text-slate-600 font-bold">TODO LIST</h1>
+          <Tdl/>
       </div>       
     </>
   )
