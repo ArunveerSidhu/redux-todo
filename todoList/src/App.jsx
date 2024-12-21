@@ -1,6 +1,6 @@
 import React from "react"
 import Tdl from "./comonents/ToDoList"
-import DarkModeToggle from "./components/DarkModeToggle"
+import DarkModeToggle from "./comonents/DarkModeToggle"
 
 function App() {
   return (

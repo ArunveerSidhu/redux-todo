@@ -11,7 +11,7 @@ function ToDoItem() {
       {todos.map((todo) => (
         <div 
           key={todo.id} 
-          className="flex items-center justify-between p-3 border-b border-slate-300 dark:border-slate-600 last:border-b-0 bg-gray-200 dark:bg-gray-800"
+          className="flex items-center rounded-md justify-between p-3 border-b border-slate-300 dark:border-slate-600 last:border-b-0 bg-gray-200 dark:bg-gray-800"
         >
           <div className="flex items-center gap-3">
             <input
