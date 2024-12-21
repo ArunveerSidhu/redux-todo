@@ -16,6 +16,12 @@ const todoSlice = createSlice({
             };
             state.push(newTodo);
         },
+        markComplete: (state, action) => {
+
+        },
+        deleteTodo: (state, action) => {
+
+        },
     }
 })
 
