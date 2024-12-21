@@ -3,9 +3,9 @@ import React from "react"
 function App() {
   return (
     <>
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+      <div className="flex h-screen w-screen justify-center items-center">
+          <h1 className="text-6xl text-slate-600 font-bold">TODO LIST</h1>
+      </div>       
     </>
   )
 }
